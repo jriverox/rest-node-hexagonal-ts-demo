@@ -1,14 +1,14 @@
-import mongoose from 'mongoose'
+import { model, Schema } from 'mongoose'
 
-const schema = new mongoose.Schema(
+const userSchema = new Schema(
   {
-    userName: String,
-    firstName: String,
-    lastName: String,
-    email: String,
-    active: Boolean,
+    userName: { type: String, required: true, unique: true },
+    firstName: { type: String, required: true },
+    lastName: { type: String, required: true },
+    email: { type: String, required: true, unique: true },
+    active: { type: Boolean, default: true },
   },
   { collection: 'users' },
 )
 
-export default mongoose.model('BlogModel', schema)
+export default model('User', userSchema)

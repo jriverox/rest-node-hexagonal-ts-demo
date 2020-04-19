@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
     "cross-env": "^7.0.2",
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.3.0",
@@ -20,9 +21,11 @@
     "koa-router": "^8.0.8",
     "lodash": "^4.17.15",
     "mongoose": "^5.9.9",
+    "uninstall": "0.0.0",
     "yenv": "^2.1.1"
   },
   "devDependencies": {
+    "@types/hapi__joi": "^16.0.12",
     "@types/koa": "^2.11.3",
     "@types/koa-bodyparser": "^4.3.0",
     "@types/koa-json": "^2.0.18",
