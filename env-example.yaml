@@ -1,0 +1,6 @@
+stage:
+    PORT: 3000
+    MONGODB_URL: "mongodb+srv://{your user here}:{your password here}@cluster0-8hxu4.mongodb.net/blogs?retryWrites=true&w=majority"
+production:
+    PORT: 3000
+    MONGODB_URL: "mongodb+srv://{your user here}:{your password here}@cluster0-8hxu4.mongodb.net/blogs?retryWrites=true&w=majority"
